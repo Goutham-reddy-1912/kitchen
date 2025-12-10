@@ -245,10 +245,12 @@ body {
 
   .banner-copy {
     margin-top: 20px;
+    left: 45px;
   }
 
   .banner-copy h1 {
-    font-size: 1.6rem;
+    font-size: 22px;
+    line-height: 35px;
   }
 
   .chef-img {
