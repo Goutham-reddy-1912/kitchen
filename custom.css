@@ -1,3 +1,7 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* hides accidental horizontal overflow safely */
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -779,3 +783,4 @@ body {
     padding: 28px 20px;
   }
 }
+
