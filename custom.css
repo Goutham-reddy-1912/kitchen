@@ -1,6 +1,9 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+* p{
+  font-size: 20px !important;
+}
 .font1{
     font-family: 'Fredericka the Great', cursive !important;
 }
@@ -28,7 +31,7 @@ body {
 /* Nav links */
 .navbar-nav .nav-link {
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 0.25rem 0;
@@ -56,7 +59,7 @@ body {
 
 /* Home icon size */
 .navbar-nav .nav-link img {
-  width: 20px;
+  width: 30px;
   margin-right: 6px;
 }
 
@@ -116,7 +119,7 @@ body {
 /* Banner layout */
 .banner_text {
   position: relative;
-  height: 505px;
+  height: 655px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -138,7 +141,7 @@ body {
   position: relative;
 }
 .chef-img {
-  width: 400px;
+  width: 550px;
 }
 
 /* Skewers (same image rotated for each corner) */
@@ -254,7 +257,7 @@ body {
   }
 
   .chef-img {
-    max-width: 240px;
+    max-width: 390px;
   }
 
   .skewer {
@@ -269,24 +272,25 @@ body {
  .about_sec {
     padding: 80px 0;
   }
-
+.about_img_sec img{
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
   .about_tagline {
     display: inline-block;
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-weight: 900;
   }
   .gradient-text-animate {
-  background: linear-gradient(270deg, #80f0ff, #ffe5b4, #80f0ff);
+  color:  #80f0ff !important;
   background-size: 300% 300%;
   animation: gradientMove 5s ease infinite;
 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
 }
 
 @keyframes gradientMove {
@@ -295,7 +299,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 .gradient-text-animate {
-  text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-shadow: 0 8px 0px rgba(0,0,0,0.1);
 }
 
 
@@ -324,10 +328,12 @@ body {
 
   /* Menu section styles can go here */
 
-  .items_sec {
-  padding: 80px 0;
-  background: #fff;
+.banner_imgitems img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
+
 
 .items_main h1 {
   font-size: 40px;
@@ -335,21 +341,21 @@ body {
   font-weight: 800;
 }
 
-.items_main h4 {
+/* .items_main h4 {
   font-size: 16px;
   color: #555;
   max-width: 650px;
   margin: 0 auto 40px;
-}
+} */
 
 /* Gradient text for heading */
-.gradient-text {
+/* .gradient-text {
   background: linear-gradient(135deg, #80f0ff, #ffe5b4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
+} */
 
 /* Carousel cards */
 .menu-card {
@@ -663,8 +669,6 @@ body {
 }
 
 .form_card {
-  max-width: 520px;
-  margin: auto;
   background: #fff;
   padding: 35px 30px;
   border-radius: 20px;
@@ -675,23 +679,23 @@ body {
   text-align: center;
   margin-bottom: 8px;
   font-size: 32px;
+  font-weight: 900;
 }
 
 .form_subtext {
   text-align: center;
-  font-size: 14px;
-  color: #555;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
 /* Gradient Text */
-.gradient-text {
+/* .gradient-text {
   background: linear-gradient(135deg, #80f0ff, #ffe5b4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
+} */
 
 /* Form fields */
 .form_group {
@@ -706,9 +710,10 @@ body {
   padding: 14px 42px 14px 14px;
   border-radius: 12px;
   border: 1px solid #ddd;
-  font-size: 14px;
+  font-size: 20px;
   outline: none;
   background: transparent;
+  height: 80px;
 }
 
 .form_group textarea {
@@ -720,8 +725,7 @@ body {
   position: absolute;
   top: 50%;
   left: 14px;
-  font-size: 13px;
-  color: #777;
+  font-size: 20px;
   transform: translateY(-50%);
   pointer-events: none;
   transition: 0.2s ease;
@@ -736,7 +740,7 @@ body {
 .form_group textarea:focus + label,
 .form_group textarea:valid + label {
   top: -6px;
-  font-size: 11px;
+  font-size: 20px;
   color: #009fbf;
 }
 
@@ -757,7 +761,7 @@ body {
   border-radius: 999px;
   border: none;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   background: linear-gradient(135deg, #80f0ff, #ffe5b4);
   color: #000;
