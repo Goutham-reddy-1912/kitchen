@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Prabhavathi's Kitchen</title>
   <link
   rel="stylesheet"
@@ -17,64 +19,69 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <link href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css" rel="stylesheet">
+
 </head>
 <body>
-  <!-- Navigation Section -->
- <section class="nav_sec">
-    <nav class="navbar navbar-expand-lg main-navbar">
-      <div class="container">
+<!-- Navigation Section -->
+<section class="nav_sec">
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
 
-        <!-- Logo for Mobile (top center) -->
-        <a class="navbar-brand d-lg-none" href="#">
-          <img src="./Imgs/logo_s.png" alt="Kitchen Logo" class="img-fluid mobile-logo">
-        </a>
+      <!-- Logo (LEFT) -->
+      <a class="navbar-brand nav-logo" href="index.html">
+        <img src="./Imgs/Logoo.png" alt="Kitchen Logo" class="img-fluid">
+      </a>
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-            <img src="./Imgs/menu.svg" alt="">
-          </span>
-        </button>
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <img src="./Imgs/menu.svg" alt="">
+        </span>
+      </button>
 
-        <!-- Menus + Center Logo -->
-        <div class="collapse navbar-collapse justify-content-between align-items-center"
-            id="navbarSupportedContent">
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <!-- Left Menu -->
-          <ul class="navbar-nav left-nav align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <img src="./Imgs/Home.webp" alt=""> Home
-              </a>
-            </li>
-            <li class="nav-item m-0">
-              <a class="nav-link" href="index.html#about-section"><img src="./Imgs/globe.webp" alt="">About Us</a>
-            </li>
-          </ul>
+        <!-- LEFT NAV (kept class) -->
+        <ul class="navbar-nav left-nav ms-auto align-items-lg-center">
 
-          <!-- Center Logo for Desktop -->
-          <a class="navbar-brand d-none d-lg-block nav-logo" href="#">
-            <img src="./Imgs/logo_s.png" alt="Kitchen Image" class="img-fluid">
-          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <img src="./Imgs/Home.webp" alt=""> Home
+            </a>
+          </li>
 
-          <!-- Right Menu -->
-          <ul class="navbar-nav right-nav align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="items.html"><img src="./Imgs/items_cart.webp" alt="">Menu</a>
-            </li>
-            <li class="nav-item m-0">
-              <a class="nav-link" href="contact_us.html"><img src="./Imgs/contact.webp" alt="">Contact Us</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about-section">
+              <img src="./Imgs/globe.webp" alt=""> About Us
+            </a>
+          </li>
 
-        </div>
+          <!-- RIGHT NAV (kept class) -->
+          <li class="nav-item">
+            <a class="nav-link" href="items.html">
+              <img src="./Imgs/items_cart.webp" alt=""> Menu
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">
+              <img src="./Imgs/contact.webp" alt=""> Contact Us
+            </a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
-  </section>
+
+    </div>
+  </nav>
+</section>
+
+
 
    <!-- Banner Section -->
 <section class="main_sec" id="hero-banner">
@@ -159,7 +166,7 @@
           <div class="menu-badge">Popular</div>
           <h2>Breakfast Specials</h2>
           <p>
-            Start your day with hot, homemade breakfasts packed with flavor and comfort.
+            Start your day with hot, homemade breakfasts with flavor and comfort.
           </p>
           <a href="items.html" class="btn menu-btn">View Full Menu</a>
         </div>
@@ -170,7 +177,7 @@
           <div class="menu-badge">Homemade</div>
           <h2>Lunch Combos</h2>
           <p>
-            Wholesome and filling meals that bring the taste of home to your workday.
+            Wholesome and filling meals bring the taste of home to your workday.
           </p>
           <a href="items.html" class="btn menu-btn">View Full Menu</a>
         </div>
@@ -251,9 +258,9 @@
           <div class="footer_social">
             <span>Follow Us</span>
             <div class="footer_social_icons">
-              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
         </div>
@@ -282,4 +289,3 @@
 
 </body>
 </html>
-

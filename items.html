@@ -1,221 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Prabhavathi's Kitchen</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="custom.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prabhavathi's Kitchen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
 </head>
+
 <body>
-    
-  <!-- Navigation Section -->
- <section class="nav_sec">
-    <nav class="navbar navbar-expand-lg main-navbar">
-      <div class="container">
 
-        <!-- Logo for Mobile (top center) -->
-        <a class="navbar-brand d-lg-none" href="#">
-          <img src="./Imgs/logo_s.png" alt="Kitchen Logo" class="img-fluid mobile-logo">
-        </a>
+<!-- Navigation Section -->
+<section class="nav_sec">
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-            <img src="./Imgs/menu.svg" alt="">
-          </span>
-        </button>
+      <!-- Logo (LEFT) -->
+      <a class="navbar-brand nav-logo" href="index.html">
+        <img src="./Imgs/Logoo.png" alt="Kitchen Logo" class="img-fluid">
+      </a>
 
-        <!-- Menus + Center Logo -->
-        <div class="collapse navbar-collapse justify-content-between align-items-center"
-            id="navbarSupportedContent">
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <img src="./Imgs/menu.svg" alt="">
+        </span>
+      </button>
 
-          <!-- Left Menu -->
-          <ul class="navbar-nav left-nav align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <img src="./Imgs/home.webp" alt=""> Home
-              </a>
-            </li>
-            <li class="nav-item m-0">
-              <a class="nav-link" href="index.html#about-section"><img src="./Imgs/globe.webp" alt="">About Us</a>
-            </li>
-          </ul>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <!-- Center Logo for Desktop -->
-          <a class="navbar-brand d-none d-lg-block nav-logo" href="#">
-            <img src="./Imgs/logo_s.png" alt="Kitchen Image" class="img-fluid">
-          </a>
+        <!-- LEFT NAV (kept class) -->
+        <ul class="navbar-nav left-nav ms-auto align-items-lg-center">
 
-          <!-- Right Menu -->
-          <ul class="navbar-nav right-nav align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="items.html"><img src="./Imgs/items_cart.webp" alt="">Menu</a>
-            </li>
-            <li class="nav-item m-0">
-              <a class="nav-link" href="contact_us.html"><img src="./Imgs/contact.webp" alt="">Contact Us</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <img src="./Imgs/Home.webp" alt=""> Home
+            </a>
+          </li>
 
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about-section">
+              <img src="./Imgs/globe.webp" alt=""> About Us
+            </a>
+          </li>
 
-      </div>
-    </nav>
-  </section>
+          <!-- RIGHT NAV (kept class) -->
+          <li class="nav-item">
+            <a class="nav-link" href="items.html">
+              <img src="./Imgs/items_cart.webp" alt=""> Menu
+            </a>
+          </li>
 
-      <section class="banner_secitem">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                  <div class="banner_imgitems">
-                    <img src="./Imgs/banner_items.png" alt="Banner Image" class="lazyload">  
-                  </div>
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                  <div class="banner_textitems">
-                    <h1>Explore Our Delicious Food</h1>
-                    <p>Discover a variety of homemade dishes crafted with love and care. From traditional favorites to innovative creations, our menu offers something for everyone. Dive into the flavors of home-cooked goodness!</p>
-                  </div>
-                  </div>
-            </div>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">
+              <img src="./Imgs/contact.webp" alt=""> Contact Us
+            </a>
+          </li>
 
-      </section>
-    <!-- Items Section -->
-     <section class="items_sec">
-          <div class="container">
-                <div class="row">
-                 <div class="col-12 text-center mb-4">
-                      <h1>Our <Menu></Menu></h1>
-                 </div>
-                </div>
-                <div class="row g-4">
-                 <!-- Item Card 1 -->
-                 <div class="col-sm-6 col-md-4 col-lg-3">
-                      <div class="card menu-card h-100">
-                            <img src="./Imgs/item1.jpg" class="card-img-top" alt="Item 1">
-                            <div class="card-body">
-                             <h5 class="card-title">Delicious Pizza</h5>
-                             <p class="card-text">A classic Italian pizza topped with fresh ingredients.</p>  
-                             <p class="card-text"><strong>Price:</strong> $12.99</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item Card 2 -->
-                    <div class="col-sm-6 col-md-4 col-lg-3">
-                      <div class="card menu-card h-100">
-                            <img src="./Imgs/item2.jpg" class="card-img-top" alt="Item 2">
-                            <div class="card-body">
-                             <h5 class="card-title">Fresh Salad</h5>
-                                <p class="card-text">A healthy mix of greens, veggies, and a light dressing.</p>  
-                                <p class="card-text"><strong>Price:</strong> $8.99</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item Card 3 -->
-                        <div class="col-sm-6 col-md-4 col-lg-3">
-                        <div class="card menu-card h-100">
-                                <img src="./Imgs/item3.jpg" class="card-img-top" alt="Item 3">
-                                <div class="card-body">
-                                <h5 class="card-title
-">Grilled Sandwich</h5>
-                                <p class="card-text">A toasted sandwich filled with cheese and veggies.</p>
-                                <p class="card-text"><strong>Price:</strong> $6.99</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-     </section>
-                
-     
-    <!-- Footer -->
-<footer class="site_footer">
-  <div class="footer_top_border"></div>
-
-  <div class="container">
-    <div class="row gy-4">
-
-      <!-- Brand / About -->
-      <div class="col-lg-4 col-md-6">
-        <div class="footer_block">
-          <h3 class="footer_logo">Prabhavathi's Kitchen</h3>
-          <p class="footer_text">
-            Homemade food crafted with love, bringing the warmth and comfort of traditional home-cooked meals to your plate every day.
-          </p>
-          <p class="footer_text small">
-            Freshly prepared, hygienic, and made just like home.
-          </p>
-        </div>
+        </ul>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col-lg-2 col-md-6">
-        <div class="footer_block">
-          <h4 class="footer_title">Quick Links</h4>
-          <ul class="footer_links">
-            <li><a href="#about-section">About Us</a></li>
-            <li><a href="#menu-section">Menu</a></li>
-            <li><a href="#items-section">Our Items</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-          </ul>
+    </div>
+  </nav>
+</section>
+
+  <section class="banner_secitem">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="banner_imgitems">
+            <img src="./Imgs/banner_items.png" alt="Banner Image" class="lazyload">
+          </div>
         </div>
-      </div>
-
-      <!-- Menu Highlights -->
-      <div class="col-lg-3 col-md-6">
-        <div class="footer_block">
-          <h4 class="footer_title">Menu Highlights</h4>
-          <ul class="footer_links">
-            <li><a href="Items">Breakfast Specials</a></li>
-            <li><a href="Items">Lunch Combos</a></li>
-            <li><a href="Items">Dinner Specials</a></li>
-            <li><a href="Items">Snacks & Sides</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Contact + Social -->
-      <div class="col-lg-3 col-md-6">
-        <div class="footer_block">
-          <h4 class="footer_title">Contact</h4>
-          <ul class="footer_contact">
-            <li><span>Phone:</span> <a href="tel:+910000000000">+91 00000 00000</a></li>
-            <li><span>Email:</span> <a href="mailto:info@prabhavathiskitchen.com">info@prabhavathiskitchen.com</a></li>
-            <li><span>Location:</span> Hyderabad, India</li>
-          </ul>
-
-          <div class="footer_social">
-            <span>Follow Us</span>
-            <div class="footer_social_icons">
-              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="banner_textitems">
+            <h1>Explore Our Delicious Food</h1>
+            <p>Discover a variety of homemade dishes crafted with love and care. From traditional favorites to
+              innovative creations, our menu offers something for everyone. Dive into the flavors of home-cooked
+              goodness!</p>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
 
-  <!-- Bottom bar -->
-  <div class="footer_bottom">
-    <div class="container">
-      <div class="footer_bottom_inner">
-        <p>© <span id="year"></span> Prabhavathi's Kitchen. All rights reserved.</p>
-        <p class="footer_credits">Designed with ❤️ by <span>Prabhavathi's Kitchen</span></p>
+  </section>
+  <section class="items_sec">
+    <div class="container mt-5">
+      <div class="row">
+
+        <!-- LEFT SIDE : MENU TABS -->
+        <div class="col-md-3">
+          <div class="menu-sticky" style="top:200px;z-index:9;">
+              <div class="menu-tabs">
+                <button class="tab-btn active" onclick="openMenu(event, 'dosa')">
+                  Breakfast & Snacks
+                </button>
+                <button class="tab-btn" onclick="openMenu(event, 'meals')">
+                  Main Course
+                </button>
+                <button class="tab-btn" onclick="openMenu(event, 'juice')">
+                  Juices
+                </button>
+              </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE : MENU CONTENT -->
+        <div class="col-md-9">
+          <div class="sticky-top" style="top:120px;z-index:9;">
+
+            <!-- TIFFINS -->
+            <div id="dosa" class="menu-content active">
+              <h2 class=" mb-4">Breakfast & Snacks</h2>
+              <ul class="menu-items">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/plane_dosa.jpg" alt="">
+                      <h2>Plain Dosa</h2>
+                      <p><i class="bi bi-currency-rupee"></i>35.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/kadapa_dosa.avif" alt="">
+                      <h2>Kadapa Karam Dosa</h2>
+                      <p><i class="bi bi-currency-rupee"></i>35.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/egg_dosa.jpg" alt="">
+                      <h2>Single Egg Dosa</h2>
+                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/egg_dosa.jpg" alt="">
+                      <h2>Double Egg Dosa</h2>
+                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/ghee_dosa.jpg" alt="">
+                      <h2>Ghee Karam Dosa</h2>
+                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/idly.avif" alt="">
+                      <h2>Idly</h2>
+                      <p><i class="bi bi-currency-rupee"></i>30.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/uggani.jpg" alt="">
+                      <h2>Uggani</h2>
+                      <p><i class="bi bi-currency-rupee"></i>30.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Plain_Maggie.jpg" alt="">
+                      <h2>Plain Maggie</h2>
+                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Veg_Maggie.jpg" alt="">
+                      <h2>Veg Maggie</h2>
+                      <p><i class="bi bi-currency-rupee"></i>45.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/egg_maggie.jpg" alt="">
+                      <h2>Egg Maggie</h2>
+                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Bread_Omelette.jpg" alt="">
+                      <h2>Bread Omelette</h2>
+                      <p><i class="bi bi-currency-rupee"></i>20.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Boiled-Egg.jpg" alt="">
+                      <h2>Boiled Egg</h2>
+                      <p><i class="bi bi-currency-rupee"></i>20.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Single-Omelette.jpg" alt="">
+                      <h2>Single Omelette</h2>
+                      <p><i class="bi bi-currency-rupee"></i>30.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Single-Omelette.jpg" alt="">
+                      <h2>Double Omelette</h2>
+                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Egg-Porutu.jpg" alt="">
+                      <h2>Egg Porutu</h2>
+                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <!-- MEALS -->
+            <div id="meals" class="menu-content">
+              <h2 class="mb-4">Main Course</h2>
+              <ul class="menu-items">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Plain-Rice.jpg" alt="">
+                      <h2>Plain Rice</h2>
+                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Curd-Rice.jpg" alt="">
+                      <h2>Curd Rice</h2>
+                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Nellore-Pulusu.jpg" alt="">
+                      <h2>Nellore Chappal Pulusu</h2>
+                      <p><i class="bi bi-currency-rupee"></i>150.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Chicken-Fry.jpg" alt="">
+                      <h2>Chicken Fry</h2>
+                      <p><i class="bi bi-currency-rupee"></i>110.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Chicken-Curry.jpg" alt="">
+                      <h2>Chicken Curry</h2>
+                      <p><i class="bi bi-currency-rupee"></i>110.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Pappu.jpg" alt="">
+                      <h2>Pappu</h2>
+                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Payasam.jpg" alt="">
+                      <h2>Payasam</h2>
+                      <p><i class="bi bi-currency-rupee"></i>80.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Prawns-Fry.jpg" alt="">
+                      <h2>Prawns Fry</h2>
+                      <p><i class="bi bi-currency-rupee"></i>150.00</p>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <!-- JUICES -->
+            <div id="juice" class="menu-content">
+              <h2 class="mb-4">Juices</h2>
+              <ul class="menu-items">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/ABC-Juice.jpg" alt="">
+                      <h2>ABC Juice</h2>
+                      <p><i class="bi bi-currency-rupee"></i>60.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Fruit-Bowl.jpg" alt="">
+                      <h2>Fruit Bowl</h2>
+                      <p><i class="bi bi-currency-rupee"></i>70.00</p>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+          </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
 
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+  <!-- Footer -->
+  <footer class="site_footer">
+    <div class="footer_top_border"></div>
+
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Brand / About -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer_block">
+            <h3 class="footer_logo">Prabhavathi's Kitchen</h3>
+            <p class="footer_text">
+              Homemade food crafted with love, bringing the warmth and comfort of traditional home-cooked meals to your
+              plate every day.
+            </p>
+            <p class="footer_text small">
+              Freshly prepared, hygienic, and made just like home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <div class="footer_block">
+            <h4 class="footer_title">Quick Links</h4>
+            <ul class="footer_links">
+              <li><a href="#about-section">About Us</a></li>
+              <li><a href="#menu-section">Menu</a></li>
+              <li><a href="#items-section">Our Items</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu Highlights -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer_block">
+            <h4 class="footer_title">Menu Highlights</h4>
+            <ul class="footer_links">
+              <li><a href="Items">Breakfast Specials</a></li>
+              <li><a href="Items">Lunch Combos</a></li>
+              <li><a href="Items">Dinner Specials</a></li>
+              <li><a href="Items">Snacks & Sides</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact + Social -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer_block">
+            <h4 class="footer_title">Contact</h4>
+            <ul class="footer_contact">
+              <li><span>Phone:</span> <a href="tel:+910000000000">+91 00000 00000</a></li>
+              <li><span>Email:</span> <a href="mailto:info@prabhavathiskitchen.com">info@prabhavathiskitchen.com</a>
+              </li>
+              <li><span>Location:</span> Hyderabad, India</li>
+            </ul>
+
+            <div class="footer_social">
+              <span>Follow Us</span>
+              <div class="footer_social_icons">
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer_bottom">
+      <div class="container">
+        <div class="footer_bottom_inner">
+          <p>© <span id="year"></span> Prabhavathi's Kitchen. All rights reserved.</p>
+          <p class="footer_credits">Designed with ❤️ by <span>Prabhavathi's Kitchen</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
   <script src="./script.js"></script>
 </body>
 

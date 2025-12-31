@@ -8,69 +8,72 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
+    <link href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <!-- Navigation Section -->
- <section class="nav_sec">
-    <nav class="navbar navbar-expand-lg main-navbar">
-      <div class="container">
+<!-- Navigation Section -->
+<section class="nav_sec">
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container">
 
-        <!-- Logo for Mobile (top center) -->
-        <a class="navbar-brand d-lg-none" href="#">
-          <img src="./Imgs/logo_s.png" alt="Kitchen Logo" class="img-fluid mobile-logo">
-        </a>
+      <!-- Logo (LEFT) -->
+      <a class="navbar-brand nav-logo" href="index.html">
+        <img src="./Imgs/Logoo.png" alt="Kitchen Logo" class="img-fluid">
+      </a>
 
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-            <img src="./Imgs/menu.svg" alt="">
-          </span>
-        </button>
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <img src="./Imgs/menu.svg" alt="">
+        </span>
+      </button>
 
-        <!-- Menus + Center Logo -->
-        <div class="collapse navbar-collapse justify-content-between align-items-center"
-            id="navbarSupportedContent">
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <!-- Left Menu -->
-          <ul class="navbar-nav left-nav align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <img src="./Imgs/home.webp" alt=""> Home
-              </a>
-            </li>
-            <li class="nav-item m-0">
-              <a class="nav-link" href="index.html#about-section"><img src="./Imgs/globe.webp" alt="">About Us</a>
-            </li>
-          </ul>
+        <!-- LEFT NAV (kept class) -->
+        <ul class="navbar-nav left-nav ms-auto align-items-lg-center">
 
-          <!-- Center Logo for Desktop -->
-          <a class="navbar-brand d-none d-lg-block nav-logo" href="#">
-            <img src="./Imgs/logo_s.png" alt="Kitchen Image" class="img-fluid">
-          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <img src="./Imgs/Home.webp" alt=""> Home
+            </a>
+          </li>
 
-          <!-- Right Menu -->
-          <ul class="navbar-nav right-nav align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="items.html"><img src="./Imgs/items_cart.webp" alt="">Menu</a>
-            </li>
-            <li class="nav-item m-0">
-              <a class="nav-link" href="contact_us.html"><img src="./Imgs/contact.webp" alt="">Contact Us</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about-section">
+              <img src="./Imgs/globe.webp" alt=""> About Us
+            </a>
+          </li>
 
-        </div>
+          <!-- RIGHT NAV (kept class) -->
+          <li class="nav-item">
+            <a class="nav-link" href="items.html">
+              <img src="./Imgs/items_cart.webp" alt=""> Menu
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">
+              <img src="./Imgs/contact.webp" alt=""> Contact Us
+            </a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
-  </section>
+
+    </div>
+  </nav>
+</section>
 
     <!-- Contact / Order Form -->
-    <section class="form_sec">
+    <section class="form_sec d-none">
         <div class="container">
             <div class="row">
                 <div class="form_spacer col-lg-12">
@@ -131,6 +134,62 @@
             </div>
         </div>
     </section>
+
+<section class="contact_info_sec">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="contact_info_card">
+          <h3 class="gradient-text-animate">Contact Details</h3>
+          <p class="contact_desc">
+            Reach out to us for orders, bulk bookings, or any enquiries.
+          </p>
+
+          <ul class="contact_info_list">
+            <li>
+              <span class="info_icon"><img src="./Imgs/call_us.gif" alt=""></span>
+              <div>
+                <small>Call Us</small>
+                <a href="tel:+91 6302231833">+91 63022 31833</a>
+              </div>
+            </li>
+
+            <li>
+              <span class="info_icon"><img src="./Imgs/mail_us.gif" alt=""></span>
+              <div>
+                <small>Email</small>
+                <a href="mailto:info@prabhavathiskitchen.com">
+                  info@prabhavathiskitchen.com
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <span class="info_icon"><img src="./Imgs/maps.gif" alt=""></span>
+              <div>
+                <small>Location</small>
+                <span>Hyderabad, India</span>
+              </div>
+            </li>
+          </ul>
+
+          <a class="bn31" href="tel:+910000000000"><span class="bn31span">Contact Us</span></a>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-lg-8">
+        <div class="contact_map_card">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.8439936075442!2d78.36754168740354!3d17.477184861332468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9230eb8b8a13%3A0xba5a23521c90f513!2sSRI%20BALAJI%20NILAYAM%2C%203-2%2F196%2C%20Krishna%20Nagar%20Colony%2C%20New%20Hafeezpet%2C%20Aditya%20Nagar%2C%20Hafeezpet%2C%20Hyderabad%2C%20Telangana%20500049!5e0!3m2!1sen!2sin!4v1767174238871!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
     <!-- Footer -->
@@ -194,9 +253,9 @@
                         <div class="footer_social">
                             <span>Follow Us</span>
                             <div class="footer_social_icons">
-                                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -225,6 +284,5 @@
     </script>
     <script src="./script.js"></script>
 </body>
-
 
 </html>
