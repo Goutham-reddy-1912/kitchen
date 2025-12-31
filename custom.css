@@ -107,8 +107,8 @@ html, body {
     margin: 0.25rem 0;
   }
 
-  .nav-logo {
-    display: none !important;
+  .nav-logo img{
+        height: 85px;
   }
 }
 
@@ -262,7 +262,7 @@ html, body {
   }
 
   .chef-img {
-    max-width: 390px;
+    max-width: 270px;
   }
 
   .skewer {
@@ -1028,5 +1028,6 @@ html, body {
     padding: 28px 20px;
   }
 }
+
 
 
