@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prabhavathi's Kitchen</title>
+  <link rel="icon" type="image/png" href="./Imgs/logo_s.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -99,14 +100,23 @@
         <div class="col-md-3">
           <div class="menu-sticky" style="top:200px;z-index:9;">
               <div class="menu-tabs">
-                <button class="tab-btn active" onclick="openMenu(event, 'dosa')">
-                  Breakfast & Snacks
+                <button class="tab-btn active" onclick="openMenu(event, 'breakfast')">
+                  Tiffins
+                </button>
+                <button class="tab-btn" onclick="openMenu(event, 'snacks')">
+                Snacks
+                </button>
+                <button class="tab-btn" onclick="openMenu(event, 'rice')">
+                  Rice Items
                 </button>
                 <button class="tab-btn" onclick="openMenu(event, 'meals')">
-                  Main Course
+                  Currys
                 </button>
                 <button class="tab-btn" onclick="openMenu(event, 'juice')">
                   Juices
+                </button>
+                <button class="tab-btn" onclick="openMenu(event, 'desserts')">
+                  Desserts
                 </button>
               </div>
           </div>
@@ -117,22 +127,22 @@
           <div class="sticky-top" style="top:120px;z-index:9;">
 
             <!-- TIFFINS -->
-            <div id="dosa" class="menu-content active">
-              <h2 class=" mb-4">Breakfast & Snacks</h2>
+            <div id="breakfast" class="menu-content active">
+              <h2 class=" mb-4">Tiffins</h2>
               <ul class="menu-items">
                 <div class="row">
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/plane_dosa.jpg" alt="">
-                      <h2>Plain Dosa</h2>
-                      <p><i class="bi bi-currency-rupee"></i>35.00</p>
+                      <h2>Plain Dosa(2 pcs)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/kadapa_dosa.avif" alt="">
                       <h2>Kadapa Karam Dosa</h2>
-                      <p><i class="bi bi-currency-rupee"></i>35.00</p>
+                      <p><i class="bi bi-currency-rupee"></i>45.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
@@ -146,30 +156,40 @@
                     <div class="menu-card">
                       <img src="./Imgs/egg_dosa.jpg" alt="">
                       <h2>Double Egg Dosa</h2>
-                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                      <p><i class="bi bi-currency-rupee"></i>60.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/ghee_dosa.jpg" alt="">
                       <h2>Ghee Karam Dosa</h2>
-                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                      <p><i class="bi bi-currency-rupee"></i>55.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/idly.avif" alt="">
-                      <h2>Idly</h2>
-                      <p><i class="bi bi-currency-rupee"></i>30.00</p>
+                      <h2>Idly(4 pcs)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>45.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
-                      <img src="./Imgs/uggani.jpg" alt="">
-                      <h2>Uggani</h2>
-                      <p><i class="bi bi-currency-rupee"></i>30.00</p>
+                      <img src="./Imgs/pongal.jpg" alt="">
+                      <h2>Pongal</h2>
+                      <p><i class="bi bi-currency-rupee"></i>60.00</p>
                     </div>
                   </div>
+                  
+                </div>
+              </ul>
+            </div>
+
+            <!-- Snacks -->
+            <div id="snacks" class="menu-content">
+              <h2 class=" mb-4">Snacks</h2>
+              <ul class="menu-items">
+                <div class="row">
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/Plain_Maggie.jpg" alt="">
@@ -195,14 +215,14 @@
                     <div class="menu-card">
                       <img src="./Imgs/Bread_Omelette.jpg" alt="">
                       <h2>Bread Omelette</h2>
-                      <p><i class="bi bi-currency-rupee"></i>20.00</p>
+                      <p><i class="bi bi-currency-rupee"></i>30.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/Boiled-Egg.jpg" alt="">
-                      <h2>Boiled Egg</h2>
-                      <p><i class="bi bi-currency-rupee"></i>20.00</p>
+                      <h2>Boiled Egg(2 pc)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>30.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
@@ -223,7 +243,30 @@
                     <div class="menu-card">
                       <img src="./Imgs/Egg-Porutu.jpg" alt="">
                       <h2>Egg Porutu</h2>
-                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
+                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <!-- Rice -->
+            <div id="rice" class="menu-content">
+              <h2 class="mb-4">Rice Items</h2>
+              <ul class="menu-items">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Plain-Rice.jpg" alt="">
+                      <h2>Plain Rice</h2>
+                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Curd-Rice.jpg" alt="">
+                      <h2>Curd Rice</h2>
+                      <p><i class="bi bi-currency-rupee"></i>60.00</p>
                     </div>
                   </div>
                 </div>
@@ -232,63 +275,42 @@
 
             <!-- MEALS -->
             <div id="meals" class="menu-content">
-              <h2 class="mb-4">Main Course</h2>
+              <h2 class="mb-4">Currys</h2>
               <ul class="menu-items">
                 <div class="row">
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
-                      <img src="./Imgs/Plain-Rice.jpg" alt="">
-                      <h2>Plain Rice</h2>
-                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="menu-card">
-                      <img src="./Imgs/Curd-Rice.jpg" alt="">
-                      <h2>Curd Rice</h2>
-                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="menu-card">
                       <img src="./Imgs/Nellore-Pulusu.jpg" alt="">
-                      <h2>Nellore Chappal Pulusu</h2>
-                      <p><i class="bi bi-currency-rupee"></i>150.00</p>
+                      <h2>Nellore Chappal Pulusu(1 pc 250ML)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>140.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/Chicken-Fry.jpg" alt="">
-                      <h2>Chicken Fry</h2>
-                      <p><i class="bi bi-currency-rupee"></i>110.00</p>
+                      <h2>Chicken Fry (250ML)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>100.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/Chicken-Curry.jpg" alt="">
-                      <h2>Chicken Curry</h2>
-                      <p><i class="bi bi-currency-rupee"></i>110.00</p>
+                      <h2>Chicken Curry (250ML)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>120.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/Pappu.jpg" alt="">
-                      <h2>Pappu</h2>
-                      <p><i class="bi bi-currency-rupee"></i>40.00</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="menu-card">
-                      <img src="./Imgs/Payasam.jpg" alt="">
-                      <h2>Payasam</h2>
-                      <p><i class="bi bi-currency-rupee"></i>80.00</p>
+                      <h2>Tomato Pappu (250ML)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>50.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/Prawns-Fry.jpg" alt="">
-                      <h2>Prawns Fry</h2>
-                      <p><i class="bi bi-currency-rupee"></i>150.00</p>
+                      <h2>Prawns Fry(250ML)</h2>
+                      <p><i class="bi bi-currency-rupee"></i>180.00</p>
                     </div>
                   </div>
                 </div>
@@ -304,14 +326,46 @@
                     <div class="menu-card">
                       <img src="./Imgs/ABC-Juice.jpg" alt="">
                       <h2>ABC Juice</h2>
-                      <p><i class="bi bi-currency-rupee"></i>60.00</p>
+                      <p><i class="bi bi-currency-rupee"></i>80.00</p>
                     </div>
                   </div>
                   <div class="col-lg-4 col-md-6 mb-4">
                     <div class="menu-card">
                       <img src="./Imgs/Fruit-Bowl.jpg" alt="">
                       <h2>Fruit Bowl</h2>
-                      <p><i class="bi bi-currency-rupee"></i>70.00</p>
+                      <p><i class="bi bi-currency-rupee"></i>60.00</p>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+
+            <!-- Desserts -->
+            <div id="desserts" class="menu-content ">
+              <h2 class=" mb-4">Desserts</h2>
+              <ul class="menu-items">
+                <div class="row">
+                  
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/Payasam.jpg" alt="">
+                      <h2>Chakkara Payasam</h2>
+                      <p><i class="bi bi-currency-rupee"></i>80.00</p>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/bellam_payas.jpg" alt="">
+                      <h2>Bellam Payasam</h2>
+                      <p><i class="bi bi-currency-rupee"></i>90.00</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-card">
+                      <img src="./Imgs/bellam_pongal.jpg" alt="">
+                      <h2>Bellam Pongal</h2>
+                      <p><i class="bi bi-currency-rupee"></i>90.00</p>
                     </div>
                   </div>
                 </div>
@@ -353,10 +407,9 @@
           <div class="footer_block">
             <h4 class="footer_title">Quick Links</h4>
             <ul class="footer_links">
-              <li><a href="#about-section">About Us</a></li>
-              <li><a href="#menu-section">Menu</a></li>
-              <li><a href="#items-section">Our Items</a></li>
-              <li><a href="#contact-section">Contact</a></li>
+              <li><a href="index.html#about-section">About Us</a></li>
+              <li><a href="items.html">Our Items</a></li>
+              <li><a href="contact_us.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -366,10 +419,13 @@
           <div class="footer_block">
             <h4 class="footer_title">Menu Highlights</h4>
             <ul class="footer_links">
-              <li><a href="Items">Breakfast Specials</a></li>
-              <li><a href="Items">Lunch Combos</a></li>
-              <li><a href="Items">Dinner Specials</a></li>
-              <li><a href="Items">Snacks & Sides</a></li>
+              <li><a href="items.html#breakfast">Tiffins</a></li>
+              <li><a href="items.html#snacks">Snacks</a></li>
+              <li><a href="items.html#rice">Rice Items</a></li>
+              <li><a href="items.html#meals">Currys</a></li>
+              <li><a href="items.html#juice">Juices</a></li>
+              <li><a href="items.html#desserts">Desserts</a></li>
+
             </ul>
           </div>
         </div>
@@ -379,18 +435,18 @@
           <div class="footer_block">
             <h4 class="footer_title">Contact</h4>
             <ul class="footer_contact">
-              <li><span>Phone:</span> <a href="tel:+910000000000">+91 00000 00000</a></li>
-              <li><span>Email:</span> <a href="mailto:info@prabhavathiskitchen.com">info@prabhavathiskitchen.com</a>
+              <li><span>Phone:</span> <a href="tel:+916302231833">+91 6302231833</a></li>
+              <li><span>Email:</span> <a href="mailto:prabhavathiskitchens@gmail.com">prabhavathiskitchens@gmail.com</a>
               </li>
-              <li><span>Location:</span> Hyderabad, India</li>
+              <li><span>Location:</span> SRI BALAJI NILAYAM3-2/196, Krishna Nagar Colony, New Hafeezpet, Aditya Nagar, Hafeezpet, Hyderabad, Telangana 500049.</li>
             </ul>
 
             <div class="footer_social">
               <span>Follow Us</span>
               <div class="footer_social_icons">
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/parbhavathis?igsh=MWxwdjI3dzFzcmV1ZA==" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1ZsAdijcqz/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://whatsapp.com/channel/0029VbBzUzcFCCoc0Dr20i2U" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
               </div>
             </div>
           </div>
